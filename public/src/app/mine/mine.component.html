@@ -1,0 +1,8 @@
+<div class="ml-3">
+<h1>Mine ShintoCoins</h1>
+<p>{{displayingPuzzle.question}}</p>
+<form (submit)="tryMine()" class="col-4">
+  <input class="form-control" type="text" name="userAnswer" [(ngModel)]="userAnswer">
+  <input class="btn btn-dark" type="submit" value="Mine">
+</form>
+</div>

@@ -1,0 +1,9 @@
+<div class="ml-3">
+<h1>Buy ShintoCoins</h1>
+<p>Current ShintoCoin Value: ${{ shintoService.currValue.toFixed(2) }}</p>
+<p>Number of ShintoCoins Owned: ${{ shintoService.balance }}</p>
+<form (submit)="buy()" class="col-4">
+  <input class="form-control" type="text" name="coinsToBuy" [(ngModel)]="coinsToBuy">
+  <input class="btn btn-dark" type="submit" value="Buy">
+</form>
+</div>

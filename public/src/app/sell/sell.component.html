@@ -1,0 +1,9 @@
+<div class="ml-3">
+<h1>Sell ShintoCoins</h1>
+<p>Current ShintoCoin Value: ${{ shintoService.currValue.toFixed(2) }}</p>
+<p>Number of ShintoCoins Owned: ${{ shintoService.balance }}</p>
+<form (submit)="sell()" class="col-4">
+  <input class="form-control" type="text" name="coinsToSell" [(ngModel)]="coinsToSell">
+  <input class="btn btn-dark" type="submit" value="sell">
+</form>
+</div>
